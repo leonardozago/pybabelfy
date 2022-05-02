@@ -133,8 +133,8 @@ class Babelfy(object):
         query = urllib.urlencode({param:value for param,value in zip(self.PARAMETERS, values)
                          if value is not None})
 
-        print query
+        print(query)
         json_string = urllib.urlopen(self.API+self.DISAMBIGUATE+query).read()
-        #print json_string
+        #print(json_string)
         babelfy_jsons = json.loads(json_string)
         return [SemanticAnnotation(babelfy_json) for babelfy_json in babelfy_jsons]
