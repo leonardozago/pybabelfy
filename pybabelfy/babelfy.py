@@ -97,10 +97,10 @@ class SemanticAnnotation(object):
 
     
     def pprint(self):
-        print self.babel_synset_id()
-        print self.babelnet_url()
-        print self.dbpedia_url()
-        print self.source()
+        print(self.babel_synset_id())
+        print(self.babelnet_url())
+        print(self.dbpedia_url())
+        print(self.source())
 
 class Babelfy(object):
 
